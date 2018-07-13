@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./built/",
+        "sourceMap": true,
+        "module": "es2015",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "target": "es6",
+        "baseUrl": ".",
+        "paths":{
+            "@router/*": ["./src/router/*"],
+            "@models/*": ["./src/models/*"],
+            "@components/*": ["./src/components/*"]
+        }
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}
