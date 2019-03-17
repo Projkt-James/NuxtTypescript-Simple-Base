@@ -16,7 +16,9 @@ import Child from './child.vue';
 })
 
 export default class App extends Vue {
-
+    created() {
+        document.title = this.$store.getters["app/getPageTitle"];
+    }
 }
 
 </script>
