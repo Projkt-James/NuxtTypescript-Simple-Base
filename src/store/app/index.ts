@@ -1,6 +1,3 @@
-/* Vuex */
-import Vuex from 'vuex';
-
 import { GetterTree, MutationTree, ActionTree } from 'vuex';
 
 //Interface model of state
@@ -16,7 +13,7 @@ const state: State = {
 
     pageTitle: "Welcome :)",
     title: "Hi!",
-    subTitle: "Welcome To <span class=\"vue-color-green\">Vue</span><span class=\"vue-color-blue\">Typescript</span> Simple Base!"
+    subTitle: "Welcome To <span class=\"vue-color-green\">Nuxt</span><span class=\"vue-color-blue\">Typescript</span> Simple Base!"
 }
 
 //States getters
@@ -37,11 +34,10 @@ const actions: ActionTree<State,any> = {
 
 }
 
-export const app = {
-    namespaced: true,
-    state: state,
+export default {
+    state: () => (state),
     getters: getters,
-    mutations: mutations,
-    actions: actions
+    mutations,
+    actions
 }
 
